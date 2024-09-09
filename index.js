@@ -1,6 +1,12 @@
 // Import Classes Here
+const Product = require("./classes/Product.js")
 
 
+let newProduct = new Product("carrots", 4, "a bunch of carrots")
+
+console.log(newProduct.inStock);
+
+console.log(newProduct.display());
 
 
 
