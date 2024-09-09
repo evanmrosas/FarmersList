@@ -1,18 +1,13 @@
 // Import Classes Here
 const Product = require("./classes/Product.js")
+const Cart = require('./classes/Cart.js')
 
 
 let newProduct = new Product("carrots", 4, "a bunch of carrots")
-
-console.log(newProduct.inStock);
-
-console.log(newProduct.display());
+let newProduct1 = new Product("carrots", 3, "a bunch of carrots")
 
 
-
-
-
-
+const newCart = new Cart();
 
 
 // DO NOT EDIT BELOW THIS LINE
