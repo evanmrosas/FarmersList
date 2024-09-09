@@ -1,3 +1,5 @@
+const Product = require("./Product.js")
+
 class Customer{
     constructor(name, email, shippingAddress){
         this.name = name;
@@ -9,6 +11,16 @@ class Customer{
 
     addToOrderHistory(cart){
         this.orderHistory.push(cart)
+    }
+
+    getRewardsPoints(){
+        
+        for(let i = 0; i < this.orderHistory.length; i++){
+            for(const prod in this.orderHistory[i]){
+                console.log(this.orderHistory[i])
+            }
+        }
+        //return this.rewardPoints = count * product.rewardPoints
     }
 }
 
